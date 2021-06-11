@@ -1,0 +1,538 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header h1{
+    max-width: 1000px;
+    margin: 50px auto 0px;
+    text-transform: lowercase;
+}
+header h1 span{
+    color: #ffaf2b;
+}
+header nav{
+    margin-top: -6px;
+    padding: 5px 2px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 3px double #dddddd;
+    clanak_sazetak: 2em;
+}
+.navigation_style{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-transform: lowercase;
+}
+.navigation_style a{
+    text-decoration: none;
+    color: #000000;
+}
+.navigation_style a:hover{
+    color: #ffffff;
+    background-color: #000000;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+}
+
+/*----------dropdown menu - kategorija ----------*/
+  .dropbtn {
+      background-color: #f8f8f6;
+      margin:0;
+      border: none;
+  }
+  .dropbtn:hover{
+      padding: 5px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      -moz-border-radius-bottomleft: 10px;
+      -moz-border-radius-bottomright: 10px;
+      transition: 0.2s all ease-out;
+      -moz-transition: 0.2s all ease-out;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgb(110, 110, 110);
+    z-index: 1;
+}
+
+.dropdown-content input[type='button']{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content input[type='button']:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #000000; color:#ffffff;  padding: 5px;}
+
+/* ---------------------------------------------*/
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+article{
+    margin: 0px 20px;
+}
+a:-webkit-any-link {
+    color: #000000;
+    text-decoration: none;
+}
+a:-moz-any-link{
+    color: #000000;
+    text-decoration: none;
+}
+a:any-link{
+    color: #000000;
+    text-decoration: none;
+}
+a:visited{
+    color: #000000;
+    text-decoration: none;
+}
+a:active{
+    color: #000000;
+    text-decoration: none;
+}
+.index_h2, h2{
+    text-transform: uppercase;
+}
+footer{
+    width:100%;
+    background-color: #eeeeee;
+    position: relative;
+    bottom: 0px;
+    margin-top: 50px;
+}
+.footer-bootom{
+    position: fixed;
+    bottom: 0px;
+}
+.footer-text{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    color: #7e7e7e;
+    font-weight: bold;
+}
+.span_footer{
+    display: inline-block;
+    margin-top: 15px;
+}
+.prazan_p{
+    width: 50px;
+}
+.empty{height: 100px;}
+
+/* ----------------------------- administracija page style ----------------------------- */
+.administracija_section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+.administracija_section a{
+    display: inline-block;
+    padding: 5px;
+    color: #150707;
+    margin: 5px;
+    text-decoration: none;
+}
+.administracija_korisnici_section{
+    font-size: 1.2em;
+}
+.administracija_korisnici_section form input[type="submit"]{ width: 100px; margin-bottom: 100px;}
+.obrisi_korisnika_radio{width: 70px;}
+.uputa_o_brisanju{
+    font-size: 1em;
+    color: #f66f07;
+    font-style: italic;
+}
+.admin_opcije_link{
+    display: inline-block;
+    border-bottom: 1px double #f66f07;
+}
+.porukaKorisniku{
+    display: inline-block;
+    position: absolute;
+    top:20px;
+    left:50px;
+    border-top: 1px solid #f65803;
+
+}
+/*------------------------------ registracija page style -------------------------------*/
+.registracija_login_section{
+    width:100%;
+    margin: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.form_style{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.form_style form,label, input{
+    width:100%;
+    font-size: 1.5rem;
+}
+.form_style input{
+    margin-bottom: 10px;
+    border:none;
+    border-bottom: 1px solid #ffaf2b;
+}
+.form_style form{
+    padding: 30px 5px;
+    box-sizing: border-box;
+}
+.form_style form input[type=submit]{
+    padding: 5px;
+    margin-left: 4px;
+    background-color: #ffaf2b;
+    letter-spacing: 2px;
+}
+form .error {
+    color: #ff0000;
+    font-size: 1.3rem;
+}
+.postojeci_email{
+    color: red;
+    position: fixed;
+    left:10px;
+    top:0%;
+    z-index: 10;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(179, 176, 176,0.5);
+}
+/*------------------------------ novi clanak page style ---------------------------------*/
+.unos_style{
+    font-size: 1.5em;
+}
+.unos_style button{
+    margin: 5px;
+    font-size: 1.2em;
+}
+#sadrzaj_clanka_glavni, #tekst_podnaslov{
+    width: 100%;
+    height: 150px;
+}
+.slika_izmjeni{
+    width: 200px;
+    height: 140px;
+}
+.form-item{
+    margin-top: 20px;
+}
+.form-field-checkbox{
+    width:20px;
+}
+.bojaPoruke{
+    color:red;
+}
+/*------------------------------ obrisi clanak page style -------------------------------*/
+.obrisi_clanak_section{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+h3{
+    border-bottom: 1px solid #ffa500;
+}
+.skup_clanaka{
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+
+}
+.obrisi_clanak_section form{
+    width: 100%;
+}
+.clanak_sazetak{
+    display: inline-block;
+    width:200px;
+    margin: 0px 5px;
+}
+.obrisi_clanak_radio{
+    width:15px;
+    margin: 0px;
+    padding: 0px;
+
+}
+.clanak_sazetak img{
+    width:200px;
+}
+.clanak_sazetak h4{
+    margin:0px;
+    padding:1px;
+    font-size: 1.2em;
+}
+/*------------------------------ obrisi kategoriju page style ---------------------------*/
+.obrisi_kategoriju_section input[type='radio']{
+    width: 15px;
+}
+
+/*------------------------------ clanak page stlye ---------------------------*/
+.clanak_section h2{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    font-size: 2.5em;
+}
+.clanak_section .sazetak{
+    color: #949393;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    font-size: 1.5em;
+    margin: -5px 0px 10px 0px;
+}
+.clanak_section picture{
+    width: 100%;
+}
+.clanak_section picture img{
+    width:100%;
+    height: 400px;
+}
+.clanak_section .datum{
+    color: #917460;
+}
+.clanak_section .sadrzaj{
+    text-align: justify;
+    line-height: 1.5em;
+}
+.clanak_footer{
+    background-color: #535252;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.clanak_footer .footer-text-clanak{
+    text-align: left;
+    background-color: #535252;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 1000px;
+    padding: 15px 0px;
+}
+.footer-div{
+    text-align: left;
+    width:100%;
+    max-width: 1000px;
+}
+.clanak_footer .footer-text-clanak > span{
+    color: #ffaf2b;
+}
+
+
+/*--------------------------------index page style -------------*/
+.articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section article{
+    width: 20%;
+    min-width: 200px;
+}
+.pet_clanka{
+    width: 18%;
+    min-width: 180px;
+    margin: 5px;
+}
+.article{
+    width:100%;
+}
+.sport_img{
+    width:100%;
+    height:110px;
+}
+.malaSlika{
+    width:100%;
+    height: 110px;
+}
+hr{color:#dddddd;}
+/*--------------------------------login page style -------------------*/
+.errorPassword{
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+}
+/*--------------------------------------------------------------------*/
+
+/*------------------- nova kategorija page style ----------------*/
+.nova_kategorija_style{
+    font-size: 1.5em;
+}
+#naziv_nove_kategorije{
+    width:300px;
+}
+#nova_kategorija_button{
+    width:300px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px){
+    /*--------------------------------registracija page style -------------*/
+    .registracija_login_section{
+        width:100%;
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .form_style{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .form_style form,label, input{
+        width:100%;
+        font-size: 1.5rem;
+    }
+    /*--------------------------------------------------------------------*/
+article{
+    margin: 0 5px;
+}
+
+}
+@media screen and (max-width: 375px){
+    .articles{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section article{
+        width: 80%;
+    }
+    .pet_clanka{
+        width: 80%;
+        margin: 5px;
+    }
+    .article{
+        width:100%;
+    }
+    .sport_img{
+        width:100%;
+        height:150px;
+    }
+    .malaSlika{
+        width:100%;
+        height: 150px;
+    }
+    .form_style{
+        width:80%;
+    }
+    .tekst{
+        margin: 0 10px;
+    }
+    .clanak_section picture img{
+        width:100%;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 425px) and (min-width: 375px){
+
+    .articles{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section article{
+        width: 80%;
+        margin: 0px 5px;
+    }
+    .article{
+        width:100%;
+    }
+    .pet_clanka{
+        width: 80%;
+        margin: 5px;
+    }
+    .sport_img{
+        width:100%;
+        height:200px;
+    }
+    .malaSlika{
+        width:100%;
+        height: 200px;
+    }
+    .form_style{
+        width:80%;
+    }
+    .tekst{
+        margin: 0 10px;
+    }
+    .clanak_section picture img{
+        width:100%;
+        height: 300px;
+    }
+}
+
